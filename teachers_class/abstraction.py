@@ -65,9 +65,6 @@ class Consultation(Teachers, Students):
         self._discipline = discipline
         self._mark = mark
 
-    def give_a_consultation(self):
+    def make_mark(self):
         return (f"Преподаватель {self._teachers_name_surname} поставил ученику {self._name_surname}"
                 f" оценку{self._mark} по предмету{self._discipline}")
-
-
-
