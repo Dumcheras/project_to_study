@@ -21,3 +21,5 @@ class Teachers:
     def set_experience(self, discipline):
         self._discipline = discipline
 
+    def set_job_title(self, job_title):
+        self._job_title = job_title
