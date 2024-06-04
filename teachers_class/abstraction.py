@@ -31,3 +31,19 @@ class Students:
         self._group = group
         self._discipline = discipline
         self._mark = mark
+
+    # Блок Геттеров\\Getter Block
+
+    def get_name_surname(self):
+        return self._name_surname
+
+    def get_group(self):
+        return self._group
+
+    def get_discipline(self):
+        return self._discipline
+
+    def get_mark(self):
+        return self._mark
+
+
