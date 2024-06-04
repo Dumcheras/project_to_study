@@ -18,7 +18,7 @@ class Teachers:
 
     # Блок Сеттеров\\Setter Block
 
-    def set_experience(self, discipline):
+    def set_discipline(self, discipline):
         self._discipline = discipline
 
     def set_job_title(self, job_title):
@@ -62,3 +62,4 @@ class Consultation(Teachers, Students):
     def __init__(self, nane_surname, name_surname, discipline, mark):
         super(Teachers).__init__(nane_surname, None, discipline)
         super(Students).__init__(name_surname, None, None, mark)
+
