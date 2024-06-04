@@ -23,3 +23,11 @@ class Teachers:
 
     def set_job_title(self, job_title):
         self._job_title = job_title
+
+
+class Students:
+    def __init__(self, name_surname, group, discipline, mark):
+        self._name_surname = name_surname
+        self._group = group
+        self._discipline = discipline
+        self._mark = mark
