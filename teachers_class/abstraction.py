@@ -4,3 +4,20 @@ class Teachers:
         self._name_surname = name_surname
         self._job_title = job_title
         self._discipline = discipline
+
+    # Блок Геттеров\\Getter Block
+
+    def get_name_surname(self):
+        return self._name_surname
+
+    def get_job_title(self):
+        return self._job_title
+
+    def get_discipline(self):
+        return self._discipline
+
+    # Блок Сеттеров\\Setter Block
+
+    def set_experience(self, discipline):
+        self._discipline = discipline
+
