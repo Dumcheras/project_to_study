@@ -1,14 +1,14 @@
 class Teachers:
     # блок инициализации\\initialization block
-    def __init__(self, name_surname, job_title, discipline):
-        self._name_surname = name_surname
+    def __init__(self, teachers_name_surname, job_title, discipline):
+        self._teachers_name_surname = teachers_name_surname
         self._job_title = job_title
         self._discipline = discipline
 
     # Блок Геттеров\\Getter Block
 
-    def get_name_surname(self):
-        return self._name_surname
+    def get_teachers_name_surname(self):
+        return self._teachers_name_surname
 
     def get_job_title(self):
         return self._job_title
@@ -59,7 +59,8 @@ class Students:
 
 
 class Consultation(Teachers, Students):
-    def __init__(self, nane_surname, name_surname, discipline, mark):
-        super(Teachers).__init__(nane_surname, None, discipline)
+    def __init__(self, teachers_name_surname, name_surname, discipline, mark):
+        super(Teachers).__init__(teachers_name_surname, None, discipline)
         super(Students).__init__(name_surname, None, None, mark)
+
 
