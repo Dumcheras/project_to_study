@@ -60,7 +60,14 @@ class Students:
 
 class Consultation(Teachers, Students):
     def __init__(self, teachers_name_surname, name_surname, discipline, mark):
-        super(Teachers).__init__(teachers_name_surname, None, discipline)
-        super(Students).__init__(name_surname, None, None, mark)
+        self._teachers_name_surname = teachers_name_surname
+        self._name_surname = name_surname
+        self._discipline = discipline
+        self._mark = mark
+
+    def give_a_consultation(self):
+        return (f"Преподаватель {self._teachers_name_surname} поставил ученику {self._name_surname}"
+                f" оценку{self._mark} по предмету{self._discipline}")
+
 
 
