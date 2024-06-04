@@ -46,4 +46,13 @@ class Students:
     def get_mark(self):
         return self._mark
 
+        # Блок Сеттеров\\Setter Block
 
+    def set_group(self, group):
+        self._group = group
+
+    def set_discipline(self, discipline):
+        self._discipline = discipline
+
+    def set_mark(self, mark):
+        self._mark = mark
