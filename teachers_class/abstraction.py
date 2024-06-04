@@ -56,3 +56,9 @@ class Students:
 
     def set_mark(self, mark):
         self._mark = mark
+
+
+class Consultation(Teachers, Students):
+    def __init__(self, nane_surname, name_surname, discipline, mark):
+        super(Teachers).__init__(nane_surname, None, discipline)
+        super(Students).__init__(name_surname, None, None, mark)
