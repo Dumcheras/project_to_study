@@ -12,11 +12,11 @@ class ClassMagazine:
 
 class Student(ClassMagazine):
     def __init__(self, students, marks, discipline, group):
-        super().__init__(students, marks, discipline)
+        super().__init__(None, students, marks, discipline)
         self.group = group
 
     def student_taken_mark(self):
-        return (f"Студент {self.students} {self.group} класса"
+        return (f"Студент {self.students} {self.group} класса "
                 f"получил {self.marks} по предмету {self.discipline}")
 
     def student_retaken_mark(self):
